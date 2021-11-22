@@ -10,23 +10,23 @@
 
 `dotnet publish -c release`
 
-**4`Local:` Upload the content of `TodoApi/bin/release/net6.0/publish` into the server's `/var/www/todoapi` directory**
+**4. `Local:` Upload the content of `TodoApi/bin/release/net6.0/publish` into the server's `/var/www/todoapi` directory**
 
-**5`Server:` Update the `appsettings.Production.json` file to the right connection string**
+**5. `Server:` Update the `appsettings.Production.json` file to the right connection string**
 
-**6`Server:` Update the database by running SQL commands from the file `Deployment/postgres.sql` file**
+**6. `Server:` Update the database by running SQL commands from the file `Deployment/postgres.sql` file**
 
 **7. `Server:` Install dotnet-sdk using snap**
 
 `sudo snap install dotnet-sdk --classic`
 
-**8`Server:` Create a systemd service**
+**8. `Server:` Create a systemd service**
 
 `sudo nano /etc/systemd/system/todoapi.service` 
 
 and replace its content with `Deployment/todoapi.service` and update the user
 
-**9 `Server:` Enable the service**
+**9. `Server:` Enable the service**
 
 `sudo systemctl enable todoapi.service`
 
