@@ -16,9 +16,7 @@
 
 **6. `Server:` Update the database by running SQL commands from the file `Deployment/postgres.sql` file**
 
-**7. `Server:` Install dotnet-sdk using snap**
-
-`sudo snap install dotnet-sdk --classic`
+**7. `Server:` Install aspnetcore runtime**
 
 **8. `Server:` Create a systemd service**
 
